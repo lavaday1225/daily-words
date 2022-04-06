@@ -1,0 +1,4 @@
+FROM golang:latest
+
+ADD . /go/src/daily-words
+WORKDIR /go/src/daily-words
