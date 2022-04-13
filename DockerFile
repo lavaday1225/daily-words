@@ -2,3 +2,8 @@ FROM golang:latest
 
 ADD . /go/src/daily-words
 WORKDIR /go/src/daily-words
+
+# build and install the application
+RUN go install
+# run the application
+CMD ["/go/bin/daily-words"]
